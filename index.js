@@ -28,7 +28,7 @@ export class XHRTransport extends JSONRPCTransport {
     constructor(apiHost, config = null) {
         super(apiHost, config)
     }
-    doRequest([requestData]) {
+    doRequest(requestData) {
         if (!requestData) {
             throw new Error('Empty request')
         }
